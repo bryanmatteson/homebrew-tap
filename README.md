@@ -12,19 +12,21 @@ Install the TCLD desktop application:
 brew install --cask bryanmatteson/tap/tcld
 ```
 
-The 1.0.0 release reuses the last validated packages without rebuilding. The
-CLI and desktop About dialog retain build version 0.3.2. The macOS CLI and desktop packages are
-signed with Developer ID and notarized by Apple; apps and DMGs have stapled
-tickets. In-app updates are unavailable in these reused binaries. macOS CLI
-revision 1 and desktop cask package revision 1 supersede the initial unsigned
-publication.
+Release 1.0.1 uses matching package and executable versions. The macOS CLI and
+desktop packages are signed with Developer ID and notarized by Apple; apps and
+DMGs have stapled tickets. The desktop includes a private Tcl runtime.
+
+Starting with 1.0.1, **Help → Check for Updates…** checks for signed desktop
+updates when requested. Installing and restarting require confirmation. Users
+of the earlier 1.0.0 packages (which report build version 0.3.2) need one upgrade
+through Homebrew or a direct download to enable future in-app updates.
 
 Upgrade either installation with Homebrew:
 
 ```sh
 brew update
-brew upgrade tcld
-brew upgrade --cask tcld
+brew upgrade --formula bryanmatteson/tap/tcld
+brew upgrade --cask bryanmatteson/tap/tcld
 ```
 
 Packages are built and checked locally by the

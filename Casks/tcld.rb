@@ -1,21 +1,17 @@
 cask "tcld" do
-  version "1.0.0,1"
+  version "1.0.1"
   on_arm do
-    sha256 "1dfa4190a48131a2456acf6d3e73390b96f85b9afdc9f6ab51ee31862d3a1bbc"
-    url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.0/TCLD-aarch64-apple-darwin-TCLD_0.3.2_aarch64-signed.dmg"
+    sha256 "17cf9c648ae7074f451ef14c410df6707739ad390bfa0c1c0c268dda40e98773"
+    url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.1/TCLD-aarch64-apple-darwin-TCLD_1.0.1_aarch64.dmg"
   end
   on_intel do
-    sha256 "24f564169197bdc00aa0645efdd6a2366037c435c7a55f3cbbea50b227fd8a63"
-    url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.0/TCLD-x86_64-apple-darwin-TCLD_0.3.2_x64-signed.dmg"
+    sha256 "d8df006a3deb6fcdfecbe0a388188f81b0c91de958cc5375e6c57806d958840b"
+    url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.1/TCLD-x86_64-apple-darwin-TCLD_1.0.1_x64.dmg"
   end
   name "TCLD"
   desc "Tcl bytecode analysis workbench"
   homepage "https://github.com/bryanmatteson/tcld"
   depends_on macos: :big_sur
   app "TCLD.app"
-  caveats <<~EOS
-    Release 1.0.0 reuses build 0.3.2 without recompilation.
-    The application reports its original build version.
-    In-app updates are unavailable; use Homebrew to update.
-  EOS
+  auto_updates true
 end
