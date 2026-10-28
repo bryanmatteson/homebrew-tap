@@ -4,13 +4,14 @@ class Tcld < Formula
   version "1.0.0"
   license "Apache-2.0"
   on_macos do
+    revision 1
     on_arm do
-      url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.0/tcld-0.3.2-aarch64-apple-darwin.tar.gz"
-      sha256 "55c3f44c067210bd29c619ee9936ff41e22b34c4d4a5335e7a5475ed2c8b54bd"
+      url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.0/tcld-0.3.2-aarch64-apple-darwin.tar.gz?revision=1"
+      sha256 "9d8c065b76064456a7a7cd998d5a0bfd3eae09595ad7d62579cc070455cb9618"
     end
     on_intel do
-      url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.0/tcld-0.3.2-x86_64-apple-darwin.tar.gz"
-      sha256 "73db4111283be53db609808bef4fb7e810b3f53128e8ecabe8ea4334dd2fd3f0"
+      url "https://github.com/bryanmatteson/tcld/releases/download/v1.0.0/tcld-0.3.2-x86_64-apple-darwin.tar.gz?revision=1"
+      sha256 "44dd3418d0566155370507c9005ca2b947b8ed3c8cfb42589fadc9c1e8db2610"
     end
   end
   on_linux do
